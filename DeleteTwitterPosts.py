@@ -9,8 +9,6 @@ access_token = ""
 access_token_secret = ""
 user_name = "" #Your @Username, without the @
 
-# Start Loop
-
 while True:
     # authorization of api key and api secret
     auth = tweepy.OAuthHandler(api_key, api_secret)
@@ -21,7 +19,7 @@ while True:
     # calling the api 
     api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
-    #Get json data - Set your @username
+    #Get json data
     json_data = api.user_timeline(screen_name=user_name)
     data = json.dumps(json_data)
     parsed = json.loads(data)
