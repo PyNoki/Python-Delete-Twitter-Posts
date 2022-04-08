@@ -7,7 +7,7 @@ api_key = ""
 api_secret = ""
 access_token = ""
 access_token_secret = ""
-user_name = '' #Your @Username
+user_name = "" #Your @Username
 
 # Start Loop
 
